@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtVisu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edit"
+        android:padding="10dp"
+        android:text="Visualizar"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+
+</android.support.constraint.ConstraintLayout>

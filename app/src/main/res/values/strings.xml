@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Assejus</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="url">http://192.168.57.1/php/frila</string>
+
+    <string-array name="reservaDe">
+        <item>Churrasqueira</item>
+        <item>Quadras Poliesportivas</item>
+        <item>Salão de festas</item>
+    </string-array>
+
+    <string-array name="item_para_reserva_quadra">
+        <item>Campo de Futebol</item>
+        <item>Quadra de Areia</item>
+        <item>Quadra de Futsal</item>
+        <item>Quadra de Tênis</item>
+        <item>Quadra de Basquete e Volei</item>
+    </string-array>
+
+    <string-array name="nada">
+        <item>nada</item>
+    </string-array>
+
+    <string-array name="item_para_reserva_salao">
+        <item>Ricota Buffet</item>
+        <item>Buffet Externo</item>
+        <item>Aluguel Fixo Salão</item>
+    </string-array>
+
+    <string-array name="item_para_reserva_churrasqueira">
+        <item>Coletiva para 50 convidados</item>
+        <item>Comunitária nº 13 para 25 convidados</item>
+        <item>Comunitária nº 14 para 25 convidados</item>
+    </string-array>
+
+    <string name="coletiva">100.00</string>
+    <string name="comunitaria">50.00</string>
+
+    <string name="futebol">120.00</string>
+    <string name="mult">30.00</string>
+    <string name="mult2">35.00</string>
+
+    <string name="ricota">2.811</string>
+    <string name="buffet">3.748</string>
+    <string name="fixo">937.00</string>
+    <string name="visualizar">Visualizar</string>
+
+    <string-array name="horario_churrasqueira_inicial">
+        <item>08:00</item>
+    </string-array>
+    <string-array name="horario_churrasqueira_final">
+        <item>18:00</item>
+    </string-array>
+
+    <string-array name="horario_salao_inicial">
+        <item>20:00</item>
+    </string-array>
+    <string-array name="horario_salao_final">
+        <item>04:00</item>
+    </string-array>
+
+    <string-array name="horario_quadra">
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+    </string-array>
+
+    <string-array name="periodos">
+        <item>Jan/2017</item>
+        <item>Fev/2017</item>
+        <item>Mar/2017</item>
+        <item>Abr/2017</item>
+        <item>Mai/2017</item>
+        <item>Jun/2017</item>
+        <item>Jul/2017</item>
+        <item>Ago/2017</item>
+        <item>Set/2017</item>
+        <item>Out/2017</item>
+        <item>Nov/2017</item>
+        <item>Dez/2017</item>
+    </string-array>
+
+</resources>

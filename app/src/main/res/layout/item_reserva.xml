@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/layout_reserva"
+    android:layout_centerHorizontal="true">
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_marginTop="11dp"
+        android:text="Item Escolhido:"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_item_escolhido"
+        android:layout_alignLeft="@+id/txtData"
+        android:layout_alignStart="@+id/txtData"
+        android:text="Data:"
+        android:textColor="@color/preto"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/txt_item_escolhido"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView10"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:background="@drawable/edit_spinner"
+        android:padding="8dp"
+        android:text="aaaa"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/txtData"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/txtFinal"
+        android:layout_alignRight="@+id/txtFinal"
+        android:layout_below="@+id/textView15"
+        android:background="@drawable/edit_spinner"
+        android:padding="8dp"
+        android:text="aaaa"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_item_escolhido"
+        android:layout_alignStart="@+id/txt_item_escolhido"
+        android:layout_below="@+id/txt_item_escolhido"
+        android:layout_marginTop="27dp"
+        android:text="Inicio:"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtInicio"
+        android:layout_toEndOf="@+id/txtInicio"
+        android:layout_toRightOf="@+id/txtInicio"
+        android:text="Término:"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/txtInicio"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_toEndOf="@+id/textView20"
+        android:layout_toRightOf="@+id/textView20"
+        android:background="@drawable/edit_spinner"
+        android:padding="8dp"
+        android:text="aaa"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/txtFinal"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/txt_status"
+        android:layout_toEndOf="@+id/textView21"
+        android:layout_toRightOf="@+id/textView21"
+        android:background="@drawable/edit_spinner"
+        android:padding="8dp"
+        android:text="aaa"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/padraoLogin"
+        android:layout_alignBottom="@+id/txt_status"
+        android:layout_toLeftOf="@+id/txt_status"
+        android:layout_toStartOf="@+id/txt_status" />
+
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/txtFinal"
+        android:layout_alignRight="@+id/txtFinal"
+        android:layout_below="@+id/textView21"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/edit_spinner"
+        android:padding="7dp"
+        android:text="aaaa"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/txt_item_escolhido"
+        android:layout_alignEnd="@+id/txt_item_escolhido"
+        android:layout_alignRight="@+id/txt_item_escolhido"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/id_reserva"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/textView24"
+        android:layout_toEndOf="@+id/id"
+        android:layout_toRightOf="@+id/id" />
+
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/textura"
+    tools:context="com.example.henrique.frila.br.com.controle.activitys.TelaLogin"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/textura"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="567dp">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="18dp"
+                app:srcCompat="@drawable/logo_assejus"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/txtRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnLogar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:onClick="Registro"
+                android:text="Cadastro aqui!"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/padraoLogin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/textView12"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editSenha"
+                android:layout_alignStart="@+id/editSenha"
+                android:layout_below="@+id/editLogin"
+                android:layout_marginTop="10dp"
+                android:text="Senha"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/padraoLogin"
+                app:layout_constraintLeft_toLeftOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <CheckBox
+                android:id="@+id/cbPermanece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editSenha"
+                android:layout_alignRight="@+id/editSenha"
+                android:layout_below="@+id/editSenha"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/azul"
+                android:backgroundTintMode="src_in"
+                android:checked="true"
+                android:text="Continuar Conectado?"
+                android:textColor="@android:color/background_light"
+                android:textColorLink="@android:color/holo_blue_bright"
+                android:buttonTint="@color/azul"
+                app:layout_constraintLeft_toLeftOf="@+id/editSenha"
+                app:layout_constraintTop_toBottomOf="@+id/editSenha"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <Button
+                android:id="@+id/btnLogar"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editSenha"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="63dp"
+                android:background="@drawable/button"
+                android:onClick="login"
+                android:text="Login"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/padraoLogin"
+                app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cbPermanece"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/editLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit"
+                android:ems="10"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/branco"
+                android:textColorHighlight="@color/branco"
+                android:textColorHint="@color/branco"
+                android:textColorLink="@color/branco"
+                android:textSize="@dimen/padraoLogin"
+                app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView4"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <EditText
+                android:id="@+id/editSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/editLogin"
+                android:layout_alignStart="@+id/editLogin"
+                android:layout_below="@+id/editLogin"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/edit"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColor="@color/branco"
+                android:textColorLink="@color/branco"
+                android:textSize="@dimen/padraoLogin"
+                app:layout_constraintLeft_toLeftOf="@+id/editLogin"
+                app:layout_constraintRight_toRightOf="@+id/editLogin"
+                app:layout_constraintTop_toBottomOf="@+id/editLogin"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="172dp"
+                android:text="Login"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/padraoGrandeLogin"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editLogin"
+                android:layout_alignStart="@+id/editLogin"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="20dp"
+                android:text="CPF"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/padraoLogin"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintTop_creator="1" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

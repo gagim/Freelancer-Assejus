@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/textura"
+    tools:context="com.example.henrique.frila.br.com.controle.activitys.TelaDeReserva"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:targetApi="@drawable/button" />
+
+
+    <ScrollView
+        android:id="@+id/molegal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:background="@android:color/transparent"
+        android:scrollbarStyle="insideOverlay">
+
+        <RelativeLayout
+            android:id="@+id/relativo"
+            android:layout_width="match_parent"
+            android:layout_height="515dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sp_reserva_de"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/sp_reserva_de"
+                android:text="Reserva de:"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/padraoLogin" />
+
+            <Spinner
+                android:id="@+id/sp_mes"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/textView12"
+                android:layout_alignStart="@+id/textView12"
+                android:layout_below="@+id/textView9"
+                android:background="@drawable/edit_spinner"
+                android:entries="@array/nada"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sp_mes"
+                android:layout_alignStart="@+id/sp_mes"
+                android:layout_below="@+id/sp_reserva"
+                android:text="Período:"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/padraoLogin" />
+
+            <Button
+                android:id="@+id/btn_pesquisar"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time_inicial"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/button"
+                android:onClick="pesquisar"
+                android:text="Pesquisar"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/padraoLogin" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sp_reserva"
+                android:layout_alignStart="@+id/sp_reserva"
+                android:layout_below="@+id/sp_reserva"
+                android:text="Locação R$:"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/padraoLogin" />
+
+            <Spinner
+                android:id="@+id/time_inicial"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/textView11"
+                android:layout_alignStart="@+id/textView11"
+                android:layout_below="@+id/textView11"
+                android:entries="@array/nada"
+                android:background="@drawable/edit_spinner"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/time_final"
+                android:layout_alignStart="@+id/time_final"
+                android:layout_below="@+id/sp_mes"
+                android:text="Término:"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/padraoLogin" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/sp_reserva_de"
+                android:layout_alignStart="@+id/sp_reserva_de"
+                android:layout_below="@+id/sp_reserva_de"
+                android:text="Item para Reserva:"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/padraoLogin" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/txtLocacao"
+                android:layout_alignStart="@+id/txtLocacao"
+                android:layout_below="@+id/txtLocacao"
+                android:text="inicio:"
+                android:textColor="@android:color/background_light"
+                android:textSize="@dimen/padraoLogin" />
+
+            <Spinner
+                android:id="@+id/sp_reserva"
+                android:layout_width="350dp"
+                android:layout_height="80dp"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_alignStart="@+id/textView13"
+                android:layout_below="@+id/textView13"
+                android:background="@drawable/edit_spinner"
+                android:entries="@array/nada"
+                android:textAlignment="center" />
+
+            <Spinner
+                android:id="@+id/sp_reserva_de"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView14"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/edit_spinner"
+                android:entries="@array/nada"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/txtLocacao"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:background="@drawable/edit"
+                android:padding="6dp"
+                android:textAlignment="center"
+                android:textColor="@color/branco"
+                android:textSize="@dimen/padraoLogin" />
+
+            <Spinner
+                android:id="@+id/time_final"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/btn_pesquisar"
+                android:layout_alignEnd="@+id/sp_reserva"
+                android:layout_alignRight="@+id/sp_reserva"
+                android:background="@drawable/edit_spinner"
+                android:entries="@array/nada"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center" />
+
+            <com.example.henrique.frila.br.com.controle.help.Scroll
+                android:id="@+id/lv_nonscroll_list"
+                android:layout_width="350dp"
+                android:layout_height="152dp"
+                android:layout_below="@+id/btn_pesquisar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:background="@drawable/edit"></com.example.henrique.frila.br.com.controle.help.Scroll>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

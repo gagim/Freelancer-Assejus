@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/layout_reserva">
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtData"
+        android:layout_alignBottom="@+id/txtData"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+        android:layout_toEndOf="@+id/txtIdListar"
+        android:layout_toRightOf="@+id/txtIdListar"
+        android:text="Data:"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/txtData"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView21"
+        android:layout_toRightOf="@+id/textView21"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        android:text="aaa"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/txtIdListar"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/textView21"
+        android:layout_alignBottom="@+id/textView21"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_toRightOf="@+id/textView16"
+        android:padding="8dp"
+        android:text="aaaa"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="@dimen/padraoLogin" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"
+        android:text="ID:"
+        android:textColor="@color/branco"
+        android:textSize="@dimen/padraoLogin" />
+
+</RelativeLayout>

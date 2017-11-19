@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="80dp"
+    android:background="@drawable/edit">
+
+    <TextView
+        android:id="@+id/txtVisu2"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/colorAccent"
+        android:padding="20dp"
+        android:text="@string/visualizar"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+    <TextView
+        android:id="@+id/txtValor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/branco"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="12dp"
+        tools:text="nada" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/txtVisu2"
+        android:layout_toStartOf="@+id/txtVisu2"
+        app:srcCompat="@drawable/edit_spinner"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+</RelativeLayout>
